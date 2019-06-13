@@ -1,0 +1,36 @@
+﻿/**
+ * Dashbaord Icons
+**/
+.glyphicon-alert, .glyphicon-file, .glyphicon-signal, .glyphicon-list-alt,  .glyphicon-user, .glyphicon-cloud-upload, .glyphicon-tag, .glyphicon-inbox, .glyphicon-tag {
+    font-size: 175px;
+    color: #008000;
+    margin-top: 5px;
+}
+
+
+/**
+ * Form Fileds Vaidation
+**/
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
+
+/**
+ * Errors 
+**/
+.editError 
+{
+    padding: 0px 20px 10px 15px;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
