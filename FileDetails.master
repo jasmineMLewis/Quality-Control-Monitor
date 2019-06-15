@@ -1,0 +1,159 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/User.Master" AutoEventWireup="false" CodeBehind="FileDetails.master.vb" Inherits="QualityControlMonitor.FileDetails" %>
+
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%@ Import Namespace="System.Web.Configuration" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .fade {
+            opacity: 0;
+                  -webkit-transition: opacity 2.25s linear;
+                 -moz-transition: opacity 2.25s linear;
+                 -ms-transition: opacity 2.25s linear;
+	            -o-transition: opacity 2.25s linear;
+	      transition: opacity 2.25s linear;
+        }
+    </style>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <%
+        Dim sessionUserID As String
+        If Not Web.HttpContext.Current.Session("SessionUserID") Is Nothing Then
+            sessionUserID = Web.HttpContext.Current.Session("SessionUserID").ToString()
+        End If
+
+        If sessionUserID = Nothing Then
+            sessionUserID = Request.QueryString("SessionUserID")
+            Web.HttpContext.Current.Session("SessionUserID") = sessionUserID
+        End If
+
+        Dim fileID As Integer = Request.QueryString("FileID")
+
+        Dim conn As New SqlConnection(WebConfigurationManager.ConnectionStrings("QualityControlMonitorConnectionString").ConnectionString)
+        conn.Open()
+        Dim clientFirstName As String
+        Dim clientLastName As String
+        Dim eliteID As String
+        Dim housingSpecialistFullName As String
+        Dim reviewType As String
+        Dim reviewDate As String
+        Dim effectiveDate As String
+        Dim comment As String
+
+        Dim query As String = String.Empty
+        query &= "SELECT ClientFirstName, ClientLastName, EliteID, Users.FirstName + ' ' + Users.LastName AS FullName, reviewTypes.Review,"
+        query &= "CASE WHEN LEFT(ReviewDate, 1) LIKE '[0-9]' THEN CONVERT(VARCHAR(max), CONVERT(date, [ReviewDate],   1), 101) ELSE CONVERT(VARCHAR(max), CONVERT(date, [ReviewDate], 109), 101) END ReviewDate,"
+        query &= "CASE WHEN LEFT(EffectiveDate, 1) LIKE '[0-9]' THEN CONVERT(VARCHAR(max), CONVERT(date, [EffectiveDate],   1), 101) ELSE CONVERT(VARCHAR(max), CONVERT(date, [EffectiveDate], 109), 101) END EffectiveDate,"
+        query &= "Comment FROM Files INNER JOIN reviewTypes ON Files.fk_reviewTypeID = reviewTypes.reviewTypeID INNER JOIN Users ON Files.fk_CaseManagerID = Users.UserID WHERE FileID = '" & fileID & "'"
+
+        Dim result As New SqlCommand(query, conn)
+        Dim reader As SqlDataReader = result.ExecuteReader()
+        While reader.Read
+            clientFirstName = CStr(reader("ClientFirstName"))
+            clientLastName = CStr(reader("ClientLastName"))
+            eliteID = CStr(reader("EliteID"))
+            housingSpecialistFullName = CStr(reader("FullName"))
+            reviewType = CStr(reader("Review"))
+            reviewDate = CStr(reader("ReviewDate"))
+            effectiveDate = CStr(reader("EffectiveDate"))
+            comment = CStr(reader("Comment"))
+        End While
+        conn.Close()
+%>    
+    <div class="row">
+        <div class="col-lg-12 col-md-7">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">
+                        <i class="fa fa-file" aria-hidden="true"></i> Info :: File</h4>
+                    <hr />
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label> Client First Name</label>
+                            <div class="form-group input-group">
+                                <input class="form-control border-input" value="<% Response.Write(clientFirstName) %>" required="required" type="text" disabled="disabled" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label> Client Last Name</label>
+                            <div class="form-group input-group">
+                                <input class="form-control  border-input" disabled="disabled"
+                                value="<% Response.Write(clientLastName) %>" required="required" type="text" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Elite ID</label>
+                            <div class="form-group input-group">
+                                <input class="form-control  border-input" value="<% Response.Write(eliteID) %>" disabled="disabled" required="required" type="text" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label> Housing Specialist</label>
+                            <div class="form-group input-group">
+                                <input class="form-control  border-input" value="<% Response.Write(housingSpecialistFullName) %>"
+                                    disabled="disabled" required="required" type="text" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                            <label>Review Type</label>
+                            <div class="form-group input-group">
+                                <input class="form-control  border-input" value="<% Response.Write(reviewType) %>"
+                                    disabled="disabled" required="required" type="text" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label> Review Date</label>
+                            <div class="form-group input-group">
+                                <input class="form-control border-input" value="<% Response.Write(reviewDate) %>"
+                                    required="required" type="text" disabled="disabled" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                            <label>Effective Date</label>
+                            <div class="form-group input-group">
+                                <input class="form-control  border-input" required="required" type="text" disabled="disabled" value="<% Response.Write(effectiveDate) %>" />
+                                <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Notes</label>
+                            <div class="form-group input-group">
+                                <textarea class="form-control border-input" rows="5" cols="40" disabled="disabled"><% Response.Write(comment) %></textarea>
+                                <span class="input-group-addon success"><span class="glyphicon glyphicon-ok"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br />
+
+         <asp:ContentPlaceHolder ID="nestedContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+
+

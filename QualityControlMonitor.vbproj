@@ -46,6 +46,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.1\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -95,21 +98,34 @@
     <Content Include="AdminDashboard.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="CreateAnnualReexamination.aspx" />
+    <Content Include="CreateEligibilityScreening.aspx" />
+    <Content Include="CreateFile.aspx" />
+    <Content Include="CreateInterimReexamination.aspx" />
+    <Content Include="CreateLeasing.aspx" />
+    <Content Include="CreateMoves.aspx" />
+    <Content Include="CreatePortIn.aspx" />
+    <Content Include="CreateReasonableRent.aspx" />
+    <Content Include="CreateSelectionFromWaitlist.aspx" />
+    <Content Include="CreateUser.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EditError.aspx" />
+    <Content Include="EditFile.aspx" />
     <Content Include="EditUser.aspx" />
+    <Content Include="ErrorReport.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FileDirectory.aspx" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Fonts\themify.svg" />
     <Content Include="Images\admin.png" />
     <Content Include="Images\auditor.jpg" />
     <Content Include="Images\background.jpg" />
-    <Content Include="Images\hanoLogo.png" />
-    <Content Include="Images\hanoLogoSmaller.png" />
     <Content Include="Images\housing specialist.jpg" />
     <Content Include="Images\quality-control-slider1.jpg" />
     <Content Include="Images\quality-control-slider2.jpg" />
     <Content Include="Images\quality-control-slider3.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="ReviewList.aspx" />
     <Content Include="Scripts\bootstrap.min - default.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -137,6 +153,76 @@
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="CreateAnnualReexamination.aspx.designer.vb">
+      <DependentUpon>CreateAnnualReexamination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAnnualReexamination.aspx.vb">
+      <DependentUpon>CreateAnnualReexamination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateEligibilityScreening.aspx.designer.vb">
+      <DependentUpon>CreateEligibilityScreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEligibilityScreening.aspx.vb">
+      <DependentUpon>CreateEligibilityScreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateFile.aspx.designer.vb">
+      <DependentUpon>CreateFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFile.aspx.vb">
+      <DependentUpon>CreateFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateInterimReexamination.aspx.designer.vb">
+      <DependentUpon>CreateInterimReexamination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateInterimReexamination.aspx.vb">
+      <DependentUpon>CreateInterimReexamination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateLeasing.aspx.designer.vb">
+      <DependentUpon>CreateLeasing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLeasing.aspx.vb">
+      <DependentUpon>CreateLeasing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateMoves.aspx.designer.vb">
+      <DependentUpon>CreateMoves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateMoves.aspx.vb">
+      <DependentUpon>CreateMoves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreatePortIn.aspx.designer.vb">
+      <DependentUpon>CreatePortIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePortIn.aspx.vb">
+      <DependentUpon>CreatePortIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateReasonableRent.aspx.designer.vb">
+      <DependentUpon>CreateReasonableRent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateReasonableRent.aspx.vb">
+      <DependentUpon>CreateReasonableRent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateSelectionFromWaitlist.aspx.designer.vb">
+      <DependentUpon>CreateSelectionFromWaitlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSelectionFromWaitlist.aspx.vb">
+      <DependentUpon>CreateSelectionFromWaitlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser.aspx.designer.vb">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.vb">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
@@ -144,11 +230,55 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="DeleteFile.ashx.vb">
+      <DependentUpon>DeleteFile.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFileError.ashx.vb">
+      <DependentUpon>DeleteFileError.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DisableUser.ashx.vb">
+      <DependentUpon>DisableUser.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="EditError.aspx.designer.vb">
+      <DependentUpon>EditError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditError.aspx.vb">
+      <DependentUpon>EditError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditFile.aspx.designer.vb">
+      <DependentUpon>EditFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditFile.aspx.vb">
+      <DependentUpon>EditFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="EditUser.aspx.designer.vb">
       <DependentUpon>EditUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditUser.aspx.vb">
       <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorReport.aspx.designer.vb">
+      <DependentUpon>ErrorReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorReport.aspx.vb">
+      <DependentUpon>ErrorReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDetails.master.designer.vb">
+      <DependentUpon>FileDetails.master</DependentUpon>
+    </Compile>
+    <Compile Include="FileDetails.master.vb">
+      <DependentUpon>FileDetails.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileDirectory.aspx.designer.vb">
+      <DependentUpon>FileDirectory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileDirectory.aspx.vb">
+      <DependentUpon>FileDirectory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">
@@ -176,6 +306,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReviewList.aspx.designer.vb">
+      <DependentUpon>ReviewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewList.aspx.vb">
+      <DependentUpon>ReviewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
@@ -215,6 +352,10 @@
     <Content Include="Fonts\themify.eot" />
     <Content Include="Fonts\themify.ttf" />
     <Content Include="Fonts\themify.woff" />
+    <Content Include="FileDetails.master" />
+    <Content Include="DeleteFile.ashx" />
+    <Content Include="DeleteFileError.ashx" />
+    <Content Include="DisableUser.ashx" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
