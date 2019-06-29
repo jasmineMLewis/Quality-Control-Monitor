@@ -12880,6 +12880,159 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:QualityControlMonitor.Statistical_Report._Form1">
+<summary>
+Form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._FileStaff">
+<summary>
+FileStaff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._SqlFileStaff">
+<summary>
+SqlFileStaff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._Auditor">
+<summary>
+Auditor control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._SqlAuditor">
+<summary>
+SqlAuditor control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._Group">
+<summary>
+Group control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._SqlGroup">
+<summary>
+SqlGroup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._ReviewDateBegin">
+<summary>
+ReviewDateBegin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._CalendarExtender1">
+<summary>
+CalendarExtender1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._ReviewDateEnd">
+<summary>
+ReviewDateEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._CalendarExtender2">
+<summary>
+CalendarExtender2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._btnFilterReport">
+<summary>
+btnFilterReport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._btnExportToExcel">
+<summary>
+btnExportToExcel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._SqlStatisticalReview">
+<summary>
+SqlStatisticalReview control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._Summary">
+<summary>
+Summary control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:QualityControlMonitor.Statistical_Report._Composition">
+<summary>
+Composition control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:QualityControlMonitor.User._head">
 <summary>
 head control.

@@ -28,6 +28,8 @@ C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityCont
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\bin\roslyn\vbc.rsp
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\bin\roslyn\VBCSCompiler.exe
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\bin\AjaxControlToolkit.dll
+C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.vbprojAssemblyReference.cache
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.Resources.resources
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.vbproj.GenerateResource.cache
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.vbproj.CoreCompileInputs.cache
@@ -35,4 +37,3 @@ C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityCont
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.dll
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.xml
 C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\obj\Debug\QualityControlMonitor.pdb
-C:\Users\dholmes\Documents\VisualBasicPrograms\QualityControlMonitor\QualityControlMonitor\bin\AjaxControlToolkit.dll

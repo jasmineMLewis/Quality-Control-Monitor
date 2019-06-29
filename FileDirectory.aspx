@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/User.Master" CodeBehind="FileDirectory.aspx.vb" Inherits="QualityControlMonitor.FileDirectory" %>
+﻿<%@ Page Title="QC :: Files" Language="vb" AutoEventWireup="false" MasterPageFile="~/User.Master" CodeBehind="FileDirectory.aspx.vb" Inherits="QualityControlMonitor.FileDirectory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"></asp:Content>
 

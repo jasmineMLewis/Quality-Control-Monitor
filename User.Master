@@ -1308,7 +1308,7 @@
 									<b class="caret"></b>
                               </a>
                               <ul class="dropdown-menu">
-                                <li><a href="http://hanoapps1/QualityControlMonitor/">Sign Out</a></li>
+                                <li><a href="Default.aspx">Sign Out</a></li>
                               </ul>
                         </li>
                     </ul>

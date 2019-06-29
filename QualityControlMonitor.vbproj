@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDashboard.aspx" />
+    <Content Include="AuditorDashboard.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="CreateAnnualReexamination.aspx" />
@@ -117,6 +118,7 @@
     <Content Include="FileDirectory.aspx" />
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Fonts\themify.svg" />
+    <Content Include="HousingSpecialistDashboard.aspx" />
     <Content Include="Images\admin.png" />
     <Content Include="Images\auditor.jpg" />
     <Content Include="Images\background.jpg" />
@@ -136,12 +138,14 @@
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\table-filter.js" />
     <Content Include="Scripts\validation.js" />
+    <Content Include="StatisticalReport.aspx" />
     <Content Include="Styles\bootstrap.min - default.css" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\business-casual.css" />
     <Content Include="Styles\custom.css" />
     <Content Include="Styles\paper-dashboard.css" />
     <Content Include="Styles\table-filter.css" />
+    <Content Include="TeamRoster.aspx" />
     <Content Include="UserDirectory.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -151,6 +155,13 @@
     </Compile>
     <Compile Include="AdminDashboard.aspx.vb">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditorDashboard.aspx.designer.vb">
+      <DependentUpon>AuditorDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditorDashboard.aspx.vb">
+      <DependentUpon>AuditorDashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CreateAnnualReexamination.aspx.designer.vb">
@@ -281,6 +292,13 @@
       <DependentUpon>FileDirectory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="HousingSpecialistDashboard.aspx.designer.vb">
+      <DependentUpon>HousingSpecialistDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HousingSpecialistDashboard.aspx.vb">
+      <DependentUpon>HousingSpecialistDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
@@ -319,6 +337,20 @@
     </Compile>
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticalReport.aspx.designer.vb">
+      <DependentUpon>StatisticalReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalReport.aspx.vb">
+      <DependentUpon>StatisticalReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamRoster.aspx.designer.vb">
+      <DependentUpon>TeamRoster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamRoster.aspx.vb">
+      <DependentUpon>TeamRoster.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User.Master.designer.vb">
